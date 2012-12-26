@@ -1,0 +1,100 @@
+\documentclass{article}
+
+\usepackage{acronym}
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{	keywordstyle=\color{blue},
+		commentstyle=\color{dkgreen},
+		stringstyle=\color{mauve},
+		numbers=left,
+		numberstyle=\tiny\color{gray},
+		stepnumber=2,
+		numbersep=5pt,
+		breaklines=true,
+		breakatwhitespace=false,
+		title=\lstname
+}
+
+\begin{document}
+
+\title{An attempt to apply NASA's colorusage rules to gliding.}
+\author{Roel Baardman, \nolinkurl{rbaardman@zonnet.nl}}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Data planning}
+\quotation{In complex applications these steps can be difficult and expensive in both time and money, requiring staff with sophisticated domain and human factors expertise. Nevertheless this is a critical part of the process. Without it there is no way to design graphics that are optimal for safety and efficiency.}
+\subsection{Compile a data inventory}
+\quotation{What information might one want displayed? Consider the mission of the page--exactly who is going to use it for exactly what tasks? Be inclusive at the initial stage--what additional data might be added within the lifetime of this design?}
+\begin{itemize}
+\item Own glider.
+\item Other aeroplanes posing no danger
+\item Other aeroplanes posing a danger.
+\item Obstacles (ground) posing a danger.
+\item Airspace.
+\item Airspace which is (temporarily) prohibited and which is posing a risk for violation.
+\item Airfields.
+\item Waypoints.
+\item Populated areas I can glide over above 600 meter (safety altitude).
+\item Populated areas I cannot glider over above 600 meters.
+\item Distinct objects: railroads, highways, waterways, powerlines, mills, powerplants.
+\item Distinct objects which pose a threat (during outlanding): powerlines, mills.
+\item Places generating lift which can speed up the current task: thermals, ridges.
+\item Places generating sink which can delay the current task: lee-sides, in-between cloudstreets, rainfall.
+\item Places generating lift which are not usefull for the current task.
+\item Places generating sink which are not harmful to the current task.
+\item Places predicted to generate lift: thermal-rich areas, ridges.
+\item Places predicted to generate sink: lee-sides, in-between cloudstreets.
+\end{itemize}
+\subsection{Plan for management of users' attention.}
+\quotation{Prioritize the data by how important or urgent they are to the activities that the user of the page will be conducting.}
+
+\subsubsection{Items posing immediate danger}
+\begin{itemize}
+\item Other aeroplanes posing an immediate danger.
+\item Ground obstacles posing an immediate danger.
+\item Airspace which is prohibited (at this time) and in risk of immediate violation.
+\item Heavy rain posing an immediate danger (cu-nim).
+\end{itemize}
+
+\subsubsection{Items posing a possible, but not immediate, danger}
+\begin{itemize}
+\item Other aeroplanes posing no danger.
+\item Obstacles on the ground.
+\item Airspace.
+\item Populated areas I can glide over above 600 meters (safety altitude).
+\item Distinct object: railroads, highways, waterways, powerlines, mills, powerplants.
+\item Heavy rain not posing an immediate danger.
+\end{itemize}
+
+\subsubsection{Items used for tactical decisions, based on measurements}
+\begin{itemize}
+\item Places generating lift which can speed up the current task: thermals, ridges.
+\item Places generating sink which can delay the current task: lee-sides, in-between cloudstreets, rainfall.
+\end{itemize}
+
+\subsubsection{Items used for tactical decisions, based on predictions}
+\begin{itemize}
+\item Places predicted to generate lift: thermal-rich areas, ridges.
+\item Places predicted to generate sink: lee-sides, in-between cloudstreets.
+\end{itemize}
+
+\section{Design the Graphics Implementation}
+\quotation{Now that we understand the data to be displayed we're ready to design graphics that support our users' tasks.}
+\subsection{Design perceptual layers}
+\subsection{Decide where chromatic color will be used and why}
+\subsection{Choose colors}
+\subsection{Solve problems}
+
+\end{document}
