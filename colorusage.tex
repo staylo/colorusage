@@ -24,6 +24,11 @@
 		title=\lstname
 }
 
+\newcommand{\myquote}[1]
+{
+	\textit{#1}
+}
+
 \begin{document}
 
 \title{An attempt to apply NASA's colorusage rules to gliding.}
@@ -34,9 +39,9 @@
 \newpage
 
 \section{Data planning}
-\quotation{In complex applications these steps can be difficult and expensive in both time and money, requiring staff with sophisticated domain and human factors expertise. Nevertheless this is a critical part of the process. Without it there is no way to design graphics that are optimal for safety and efficiency.}
+\myquote{In complex applications these steps can be difficult and expensive in both time and money, requiring staff with sophisticated domain and human factors expertise. Nevertheless this is a critical part of the process. Without it there is no way to design graphics that are optimal for safety and efficiency.}
 \subsection{Compile a data inventory}
-\quotation{What information might one want displayed? Consider the mission of the page--exactly who is going to use it for exactly what tasks? Be inclusive at the initial stage--what additional data might be added within the lifetime of this design?}
+\myquote{What information might one want displayed? Consider the mission of the page--exactly who is going to use it for exactly what tasks? Be inclusive at the initial stage--what additional data might be added within the lifetime of this design?}
 \begin{itemize}
 \item Own glider.
 \item Other aeroplanes posing no danger
@@ -58,7 +63,7 @@
 \item Places predicted to generate sink: lee-sides, in-between cloudstreets.
 \end{itemize}
 \subsection{Plan for management of users' attention.}
-\quotation{Prioritize the data by how important or urgent they are to the activities that the user of the page will be conducting.}
+\myquote{Prioritize the data by how important or urgent they are to the activities that the user of the page will be conducting.}
 
 \subsubsection{Items posing immediate danger}
 \begin{itemize}
@@ -91,9 +96,22 @@
 \end{itemize}
 
 \section{Design the Graphics Implementation}
-\quotation{Now that we understand the data to be displayed we're ready to design graphics that support our users' tasks.}
+\myquote{Now that we understand the data to be displayed we're ready to design graphics that support our users' tasks.}
 \subsection{Design perceptual layers}
+\myquote{\emph{Contrast Polarity.} The first graphics choice is the contrast polarity--will the display be "radar-like" (bright symbols on dark backgrounds) or "map-like" (dark symbols on light backgrounds). Both have been successful in various applications; both have pros and cons.}
+
+\myquote{\emph{Build the Perceptual Hierarchy--Managing Attention.} The next step is to design the perceptual hierarchy, manipulating the salience (perceptual prominence) of the data layers to match their positions in the urgency hierarchy as closely as possible. Remember to try to leave options for any later additions of further data types. Salience can be manipulated by adjusting luminance contrast, symbol/font size, line weight, flashing, and auditory alerts. Chromatic color can be used to make some data "pop out" (see next step), but the other color purposes in that step need to be considered at the same time. Do the achromatic manipulations first.}
+
+
 \subsection{Decide where chromatic color will be used and why}
+\myquote{In this step we are not yet choosing the labeling colors. We are just finding the places where we need color coding. Coding with chromatic colors can be a very effective tool, but overuse can dilute its impact. In complicated graphics the number of usable labeling colors is surprisingly limited, once all of the constraints are taken into consideration. Use color coding only for specific purposes, for the things it does well:
+\begin{itemize}
+\item Grouping with Color 
+\item Labeling with Color 
+\item Color and Popout
+\end{itemize}
+}
+
 \subsection{Choose colors}
 \subsection{Solve problems}
 
