@@ -57,6 +57,7 @@
 \item Airfields in task.
 \item Waypoints.
 \item Waypoints in task.
+\item Landmarks.
 \item Populated areas I can glide over above 600 meter (safety altitude).
 \item Populated areas I cannot glide over above 600 meters.
 \item Distinct objects: railroads, highways, waterways, powerlines, mills, powerplants.
@@ -89,11 +90,11 @@
 \item Obstacles on the ground.
 \item Airspace.
 \item Populated areas I can glide over above 600 meters (safety altitude).
-\item Distinct object: railroads, highways, waterways, powerlines, mills, powerplants.
+\item Distinct object: powerlines, mills, powerplants, high obstacles.
 \item Heavy rain not posing an immediate danger.
 \end{itemize}
 
-\subsubsection{Items used for tactical decisions, based on measurements}
+\ subsubsection{Items used for tactical decisions, based on measurements}
 \begin{itemize}
 \item Places generating lift which can speed up the current task: thermals
 	(measured by ownship and by other traffic), ridges, mountain wave
@@ -105,7 +106,14 @@
 \subsubsection{Items used for tactical decisions, based on predictions}
 \begin{itemize}
 \item Places predicted to generate lift: thermal-rich areas, ridges.
-\item Places predicted to generate sink: lee-sides, in-between cloudstreets.
+\item Places predicted to generate sink: lee-sides, in-between cloudstreets,
+	predicted rainfall
+\end{itemize}
+
+\subsubsection{Items used for navigational context}
+\begin{itemize}
+\item Line features: Railroads, highways, waterways.
+\item Landmarks: Churches, castles, ruins, quarries.
 \end{itemize}
 
 \section{Design the Graphics Implementation}
